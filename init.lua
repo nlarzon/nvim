@@ -1,0 +1,5 @@
+require('plugins')
+require('config')
+require('options')
+require('keymap')
+vim.cmd('colorscheme nord')

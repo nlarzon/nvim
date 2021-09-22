@@ -1,0 +1,6 @@
+require('config.tree-sitter')
+require('config.lualine')
+require('config.nvim-tree')
+require('config.lsp')
+require('cmp')
+require('lspkind')
