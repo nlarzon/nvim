@@ -1,4 +1,4 @@
-  -- Setup nvim-cmp.
+-- Setup nvim-cmp.
   local cmp = require'cmp'
 
   cmp.setup({
@@ -8,10 +8,10 @@
         vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` user.
 
         -- For `luasnip` user.
-        require('luasnip').lsp_expand(args.body)
+         require('luasnip').lsp_expand(args.body)
 
         -- For `ultisnips` user.
-        -- vim.fn["vsnip#anonymous"](args.body)
+        -- vim.fn["UltiSnips#Anon"](args.body)
       end,
     },
     mapping = {
@@ -28,7 +28,7 @@
       { name = 'vsnip' },
 
       -- For luasnip user.
-      --{ name = 'luasnip' },
+      -- { name = 'luasnip' },
 
       -- For ultisnips user.
       -- { name = 'ultisnips' },
@@ -37,4 +37,3 @@
       { name = 'path' },
     }
   })
-  }
